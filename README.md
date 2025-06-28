@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # true
 
 How to start the true application
@@ -11,3 +12,7 @@ Health Check
 ---
 
 To see your applications health enter url `http://localhost:8081/healthcheck`
+=======
+# 2025_UmapathyPrahadeesh_Backend
+The REST Api and the webservice
+>>>>>>> 2ba800bf3774143c98e43fc28d5abc725fb2b60e
