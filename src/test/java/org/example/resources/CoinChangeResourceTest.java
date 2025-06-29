@@ -23,9 +23,9 @@ public class CoinChangeResourceTest {
             .build();
 
     @Test
-    public void testCalculateMinimumCoins() {
-        List<Double> denominations = Arrays.asList(0.01, 0.05, 0.10, 0.25);
-        CCRequest request = new CCRequest(0.41, denominations);
+    public void testcalcmincoins() {
+        List<Double> denominations = Arrays.asList(0.01, 0.05, 0.10, 0.20);
+        CCRequest request = new CCRequest(7.03, denominations);
 
         Response response = RESOURCES.target("/api/v1/coin-change/calculate")
                 .request()

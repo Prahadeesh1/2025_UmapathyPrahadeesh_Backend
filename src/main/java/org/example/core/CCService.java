@@ -7,7 +7,7 @@ public class CCService {
 
     private static final int[] VALID_DENOMINATIONS = {1, 5, 10, 20, 50, 100, 200, 500, 1000, 5000, 10000, 100000};
 
-    public Map<String, Object> calculateMinimumCoins(CCRequest request) {
+    public Map<String, Object> calcmincoins(CCRequest request) {
         return calcmincoins(request.getAmount(),
                 request.getDenominations().stream().mapToDouble(Double::doubleValue).toArray());
     }
@@ -151,5 +151,5 @@ public class CCService {
             }
         }
         return false;
-    }3
+    }
 }

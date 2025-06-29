@@ -25,9 +25,9 @@ public class CoinChangeResource {
     @POST
     @Path("/calculate")
     @Timed
-    public Response calculateMinimumCoins(@Valid CCRequest request) {
+    public Response calcmincoins(@Valid CCRequest request) {
         try {
-            Map<String, Object> result = CCService.calculateMinimumCoins(request);
+            Map<String, Object> result = CCService.calcmincoins(request);
 
             if (result.containsKey("error")) {
                 ErrorResponse errorResponse = new ErrorResponse("CALCULATION_ERROR", (String) result.get("error"));
