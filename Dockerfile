@@ -1,15 +1,14 @@
-# Use official OpenJDK runtime as the base image
-# Using JDK 11 to match your Maven configuration
+# Using JDK 11
 FROM openjdk:11-jre-slim
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Create a non-root user for security
+# Creating a non-root user for security
 RUN groupadd -r appuser && useradd -r -g appuser appuser
 
-# Copy the built JAR file from your local machine to the container
-# The JAR file should be built using: mvn clean package
+# Copying the built .jar file from your local machine to the container
+# The .jar file should be built using: mvn clean package
 COPY target/coin-change-api-1.0-SNAPSHOT.jar app.jar
 
 # Copy the configuration file
@@ -21,7 +20,7 @@ RUN chown -R appuser:appuser /app
 # Switch to non-root user
 USER appuser
 
-# Expose the ports that your application uses
+# Expose the ports that application uses
 # Port 8080 for the main application
 # Port 8081 for admin/health checks
 EXPOSE 8080 8081
