@@ -269,12 +269,6 @@ The API implements an optimized **Dynamic Programming** solution:
 mvn test
 ```
 
-### Test Coverage
-
-The test suite includes:
-- **Unit Tests**: Core business logic validation
-- **Integration Tests**: End-to-end API functionality
-- **Edge Case Testing**: Boundary conditions and error scenarios
 
 ### Example Test Cases:
 - Valid coin calculations
@@ -344,33 +338,5 @@ mvn clean install
 mvn exec:java -Dexec.mainClass="org.example.CoinChangeApplication" -Dexec.args="server config.yml"
 ```
 
-### Code Style
 
-The project follows standard Java conventions:
-- **Package Structure**: Organized by functionality (api, core, resources)
-- **Naming**: Clear, descriptive class and method names
-- **Documentation**: Comprehensive inline comments
-- **Validation**: Jakarta Bean Validation annotations
-
-## 📝 License
-
-This project is available under the MIT License.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📞 Support
-
-For questions, issues, or feature requests:
-- Open an issue in the repository
-- Check existing documentation
-- Review test cases for usage examples
-
----
-
-**Built with ❤️ using Dropwizard, Java, and Dynamic Programming**
+**Built with using Dropwizard, Java, and Dynamic Programming**
